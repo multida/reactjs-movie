@@ -25,7 +25,10 @@ function Detail() {
         <div className="box">
           <h1>{movie.title}</h1>
           <div>
-            <img src={movie.medium_cover_image} />
+            <img
+              src={movie.medium_cover_image}
+              alt={movie.medium_cover_image}
+            />
           </div>
           <div style={{ textAlign: "center" }}>
             rating: {movie.rating} | year:{movie.year} | runtime :{" "}
